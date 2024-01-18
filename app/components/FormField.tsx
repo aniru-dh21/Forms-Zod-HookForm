@@ -1,8 +1,8 @@
+
 import { FormFieldProps } from "@/types";
 
 const FormField: React.FC<FormFieldProps> = ({
   type,
-  propTypes,
   placeholder,
   name,
   register,
@@ -18,5 +18,4 @@ const FormField: React.FC<FormFieldProps> = ({
     {error && <span className="error-message">{error.message}</span>}
   </>
 );
-
 export default FormField;
